@@ -20,144 +20,219 @@
     
     <link rel="stylesheet" href="style.css">
 </head>
+
+
+<style>
+  .carousel {
+      overflow: hidden;
+      position: relative;
+    }
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel-item {
+      min-width: 100%;
+    }
+    .carousel-item {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .carousel-text {
+            position: absolute;
+            text-align: center;
+            color: black;
+            z-index: 10;
+        }
+</style>
+
+
 <body>
-    <section id="nav" class="">
-        <nav class="nav">
-          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-              <img src="image/a.png" class="h-8" alt="Logo">
-              <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">THE MIRROR</span>
-            </a>
-            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <!-- Placeholder for future content or buttons -->
-            </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-              <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
-                <li>
-                  <a href="index.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white-700 md:p-0 hover:text-yellow-500">HOME</a>
-                </li>
-                <li>
-                  <a href="articles.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white-700 md:p-0 hover:text-yellow-500">ARTICLES</a>
-                </li>
-                <li>
-                  <a href="announcement.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white-700 md:p-0 hover:text-yellow-500">ANNOUNCEMENT</a>
-                </li>
-                <li>
-                  <a href="achivements.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white-700 md:p-0 hover:text-yellow-500">ACHIEVEMENTS</a>
-                </li>
-                <li>
-                  <a href="aboutpage.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white-700 md:p-0 hover:text-yellow-500">ABOUT PAGE</a>
-                </li>
-              </ul> 
-            </div>
+    
+  <br>
+  <!--navs pindutan-->
+  <section >
+    <nav>
+      <div class="max-w-screen-xl mx-auto p-1 flex flex-wrap items-center justify-between">
+        <a href="#" class="flex items-center space-x-3">
+          <img src="image/a.png" class="h-8" alt="Logo">
+          <span class="self-center text-2xl font-semibold text-black border-b-2 border-violet-500">THE MIRROR</span>
+        </a>
+        <div class="flex md:order-2 space-x-3">
+          <!-- Placeholder for future content or buttons -->
+        </div>
+        <div class="hidden md:flex items-center justify-between w-full md:w-auto md:order-1 ml-auto" id="navbar-sticky">
+          <ul class="flex flex-col md:flex-row md:space-x-8 mt-2 md:mt-0 p-4 md:p-0 font-medium">
+            <li>
+              <a href="index.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">HOME</a>
+            </li>
+            <li>
+              <a href="articles.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ARTICLES</a>
+            </li>
+            <li>
+              <a href="announcement.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ANNOUNCEMENT</a>
+            </li>
+            <li>
+              <a href="achivements.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ACHIEVEMENTS</a>
+            </li>
+            <li>
+              <a href="aboutpage.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ABOUT PAGE</a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+  </section>
+  <br>
+  <div class="mt-2 text-center">
+    <h1 class="text-3xl font-bold">ACHIEVEMENTS</h1>
+    <p class="text-gray-600 mt-2 font-semibold">This is a brief description of the main news. It provides a quick summary to grab the reader's attention.</p>
+    <p class="text-gray-600 mt-2 font-semibold">This is a brief description of the main news. </p>
+</div>
+
+<section id="achievements" class="py-16">
+  <div class="max-w-7xl w-full px-4 mx-auto">
+      <div class="grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
+          <div class="flex flex-col items-center md:items-center text-center">
+              <h1 class="mb-4 text-4xl font-bold text-gray-900">
+                  <span class="text-black-500">Congratulations!</span>
+              </h1>
+              <p class="mb-8 text-gray-700">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum est maiores assumenda nulla id! Aperiam doloribus quos provident sequi porro rem cumque reprehenderit deserunt, dolorem consequatur nihil eaque architecto dicta?
+                  Aspernatur vel harum obcaecati atque deleniti, tempora officia dolorum fuga in incidunt, qui architecto commodi quae, rerum dolorem facere. Rerum cumque impedit voluptatem possimus quam pariatur maxime ex tempore. Dolor.
+                  Dignissimos, tempora modi? Commodi
+              </p>
+              <div class="flex justify-center">
+                  <button class="flex items-center justify-center gap-2 rounded-2xl bg-violet-500 p-4 font-semibold text-white hover:bg-yellow-500 transition-colors duration-300">
+                      CLUSTER REPRESENTATICE! 
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                      </svg>
+                  </button>
+              </div>
           </div>
-        </nav>
-      </section>
+          <div class="flex justify-center items-center">
+              <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434831202_817786707048502_6033755304355467245_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHSoRPno7c_oL2YZuZA9k74tTGPz9OwIl61MY_P07AiXiRDMkGUdr3z_KkEHpEHFUC8OHGgxnwECDMLIptmzerz&_nc_ohc=hN0EnXNtYbEQ7kNvgGs-FoG&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYBfArFx8Pq48RGFMhZLO1mYOnh8YWoCXzHJU3SKLpGpnw&oe=66A154D9" alt="Profile Image" class="md:w-96 w-72 rounded-full shadow-lg" />
+          </div>
+      </div>
+  </div>
+</section>
 
-<!---
-        <div class="bg-cover bg-center" style="background-image: url('https://e0.pxfuel.com/wallpapers/299/677/desktop-wallpaper-for-your-phone-data-src-aesthetic-light-purple-background-tip-violet.jpg');">-->
+<div class="h-screen h-full ">
+  <div class="max-w-7xl w-full px-4 mx-auto">
+      <div class="mb-4 flex items-center justify-between">
+          <div class="flex items-center ">
+              <h2 class="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white">Gallery</h2>
+
+              <p class="hidden max-w-screen-sm text-gray-500 dark:text-gray-300 md:block">
+                  This is a section of some simple filler text,
+                  also known as placeholder text. It shares some characteristics of a real written text.
+              </p>
+          </div>
+
+         
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+          <!-- image - start -->
+          <a href="#"
+              class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434703080_817088323785007_388690418068746462_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY5EVlG2m6VIWAmbNqpLzD8EkqFOCMvJHwSSoU4Iy8kQ58TJh7jlcPMyKCT2w4MQEFw8MSrWXPqRsurLzq6Eje&_nc_ohc=_IPS6H3wV5oQ7kNvgF2lMyi&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYD__fO8zsnc00Y9fI1v0FpD5tM6jjI2XKGn4nHYgPwpfQ&oe=669AF32A" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Congratulation!</span>
+          </a>
+          <!-- image - end -->
+
+          <!-- image - start -->
+          <a href="#"
+              class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+              <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/436551877_839478148212691_840110067070807674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFMZQ_xsdOp43XgV0sJYeRXI8d3eHfxDcMjx3d4d_ENw_dmGfwQ_Ovwr0syi6jxQNJV-qoP9UgefYb_Rf9HVG7R&_nc_ohc=5POJkCb-WygQ7kNvgFrG6br&_nc_ht=scontent.fcrk1-4.fna&oh=00_AYCtVWqYts0yv91lCg9gKByEU-hRSxgZBkMhGcsytpArnA&oe=66A2CBFF" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Congratulation!</span>
+          </a>
+          <!-- image - end -->
+
+          <!-- image - start -->
+          <a href="#"
+              class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+              <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/436551877_839478148212691_840110067070807674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFMZQ_xsdOp43XgV0sJYeRXI8d3eHfxDcMjx3d4d_ENw_dmGfwQ_Ovwr0syi6jxQNJV-qoP9UgefYb_Rf9HVG7R&_nc_ohc=5POJkCb-WygQ7kNvgFrG6br&_nc_ht=scontent.fcrk1-4.fna&oh=00_AYCtVWqYts0yv91lCg9gKByEU-hRSxgZBkMhGcsytpArnA&oe=66A2CBFF" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Congratulation!</span>
+          </a>
+          <!-- image - end -->
+
+          <!-- image - start -->
+          <a href="#"
+              class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434703080_817088323785007_388690418068746462_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY5EVlG2m6VIWAmbNqpLzD8EkqFOCMvJHwSSoU4Iy8kQ58TJh7jlcPMyKCT2w4MQEFw8MSrWXPqRsurLzq6Eje&_nc_ohc=_IPS6H3wV5oQ7kNvgF2lMyi&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYD__fO8zsnc00Y9fI1v0FpD5tM6jjI2XKGn4nHYgPwpfQ&oe=669AF32A" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Congratulation!</span>
+          </a>
+          <!-- image - end -->
+      </div>
+  </div>
+  <br>
+  <section class="w-full ">
+    <div class="carousel w-full max-w-7xl mx-auto   overflow-hidden">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="w-full px-2 mb-4">
+            <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434703080_817088323785007_388690418068746462_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY5EVlG2m6VIWAmbNqpLzD8EkqFOCMvJHwSSoU4Iy8kQ58TJh7jlcPMyKCT2w4MQEFw8MSrWXPqRsurLzq6Eje&_nc_ohc=_IPS6H3wV5oQ7kNvgF2lMyi&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYD__fO8zsnc00Y9fI1v0FpD5tM6jjI2XKGn4nHYgPwpfQ&oe=669AF32A" alt="Image 1" class="rounded-lg w-full">
+          </div>
+          <div class="w-full px-2 mb-4">
+            <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/434202111_817081477119025_8010824712087334958_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFOluHxqkaee7XRvvZcq7mqWecx9TnPk6JZ5zH1Oc-TosnRwZixwclsw-hL_I7VCnePQQfLy_gW38FpqgamZIci&_nc_ohc=B7x1Wm3iE7kQ7kNvgHOsbo4&_nc_ht=scontent.fcrk1-1.fna&oh=00_AYAxizGfGxJjSHqdLLPJl8HVMEjyl39pGjR4RDQ9SbcplQ&oe=669AE85A" alt="Image 2" class="rounded-lg w-full">
+          </div>
+          <div class="w-full px-2 mb-4">
+            <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/435703175_817081497119023_1503442731914044424_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEst1HyY0DEsIjJPF1ySOMR8Po_vYkKD-rw-j-9iQoP6gnOgu5raSVnKJbXVrtj5YlN5BjwqBpvTu5FVEhIUd1i&_nc_ohc=_ma3GQbq3SQQ7kNvgG2bu5G&_nc_ht=scontent.fcrk1-3.fna&oh=00_AYCQm-UXvBLx8-QmbUVph83vK3t1dsEF6ZE2MJan_5fy-A&oe=669AED96" alt="Image 3" class="rounded-lg w-full">
+          </div>
+          <div class="w-full px-2 mb-4">
+            <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434703080_817088323785007_388690418068746462_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY5EVlG2m6VIWAmbNqpLzD8EkqFOCMvJHwSSoU4Iy8kQ58TJh7jlcPMyKCT2w4MQEFw8MSrWXPqRsurLzq6Eje&_nc_ohc=_IPS6H3wV5oQ7kNvgF2lMyi&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYD__fO8zsnc00Y9fI1v0FpD5tM6jjI2XKGn4nHYgPwpfQ&oe=669AF32A" alt="Image 4" class="rounded-lg w-full">
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="w-full px-2 mb-4">
+            <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434703080_817088323785007_388690418068746462_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY5EVlG2m6VIWAmbNqpLzD8EkqFOCMvJHwSSoU4Iy8kQ58TJh7jlcPMyKCT2w4MQEFw8MSrWXPqRsurLzq6Eje&_nc_ohc=_IPS6H3wV5oQ7kNvgF2lMyi&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYD__fO8zsnc00Y9fI1v0FpD5tM6jjI2XKGn4nHYgPwpfQ&oe=669AF32A" alt="Image 5" class="rounded-lg w-full">
+          </div>
+          <div class="w-full px-2 mb-4">
+            <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/434202111_817081477119025_8010824712087334958_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFOluHxqkaee7XRvvZcq7mqWecx9TnPk6JZ5zH1Oc-TosnRwZixwclsw-hL_I7VCnePQQfLy_gW38FpqgamZIci&_nc_ohc=B7x1Wm3iE7kQ7kNvgHOsbo4&_nc_ht=scontent.fcrk1-1.fna&oh=00_AYAxizGfGxJjSHqdLLPJl8HVMEjyl39pGjR4RDQ9SbcplQ&oe=669AE85A" alt="Image 6" class="rounded-lg w-full">
+          </div>
+          <div class="w-full px-2 mb-4">
+            <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/435703175_817081497119023_1503442731914044424_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEst1HyY0DEsIjJPF1ySOMR8Po_vYkKD-rw-j-9iQoP6gnOgu5raSVnKJbXVrtj5YlN5BjwqBpvTu5FVEhIUd1i&_nc_ohc=_ma3GQbq3SQQ7kNvgG2bu5G&_nc_ht=scontent.fcrk1-3.fna&oh=00_AYCQm-UXvBLx8-QmbUVph83vK3t1dsEF6ZE2MJan_5fy-A&oe=669AED96" alt="Image 7" class="rounded-lg w-full">
+          </div>
+          <div class="w-full px-2 mb-4">
+            <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434831202_817786707048502_6033755304355467245_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHSoRPno7c_oL2YZuZA9k74tTGPz9OwIl61MY_P07AiXiRDMkGUdr3z_KkEHpEHFUC8OHGgxnwECDMLIptmzerz&_nc_ohc=OECPezRwFSkQ7kNvgEBibY0&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYC60-9JOikvDmh8TZjq7HhMa-71F7qr7eBcWpohkQSmTQ&oe=669ABD59" alt="Image 8" class="rounded-lg w-full">
+          </div>
+        </div>
+      </div>
+      <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition">‹</button>
+      <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition">›</button>
+    </div>
+  </section>
 
 
-
-
-
-        <section id="achievements" class="py-12">
-            <div class="max-w-screen-xl mx-auto px-4">
-                <div class="flex flex-wrap items-start">
-                    <div class="w-full lg:w-1/2 lg:pr-8">
-                        <h2 class="text-center text-3xl font-bold mb-4">ACHIEVEMENTS</h2>
-                        <p class="text-center text-gray-700 leading-relaxed">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatem ducimus totam architecto vel incidunt porro odit, commodi minima? Repellat et, hic eligendi mollitia non deleniti necessitatibus fugiat cumque a. Recusandae aperiam nesciunt earum sequi odio nulla commodi repellendus, enim sapiente, quidem porro! Veritatis possimus ipsum, natus perspiciatis quam aliquam, obcaecati ipsam esse suscipit temporibus similique blanditiis aperiam atque. Itaque. Doloribus ullam debitis ea eligendi! Nisi nemo blanditiis, culpa perspiciatis quibusdam sit amet, accusamus totam esse eligendi obcaecati enim dicta quo provident nulla reprehenderit nesciunt debitis assumenda at cupiditate! Voluptatum.
-                        </p>
-                    </div>
-                    <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
-                        <div class="aspect-w-16 aspect-h-9">
-                          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100064058944301%2Fvideos%2F3851809058385296%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                        </div>
-                    </div>
-                    <section class="w-full mt-8">
-                      <div class="carousel w-full max-w-7xl mx-auto shadow-lg rounded-lg overflow-hidden">
-                        <div class="carousel-inner">
-                          <!-- Slide 1 -->
-                          <div class="carousel-item grid grid-cols-2 sm:grid-cols-4 gap-4">
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/428613377_373913148723378_7690334558789896733_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGBNtTm2QRca7v_19_g2JShr8kT_SPywFavyRP9I_LAVh46KWLhFWbZI2fPdSv-zF2SknVFPioNdcnEsAbanItd&_nc_ohc=wQyokdeGJm8Q7kNvgEqpAld&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYBa8pKZMWPAKHcio3BUtlV5k06KFrAho0BLvU_rb8EMQw&oe=669AD3DB" alt="Image 1" class="rounded-lg w-full">
-                            </div>
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/428606528_373914028723290_1342487845501663196_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFE04b0PnBJ-ZgIKoqBZc0u9wPBbCjVrtH3A8FsKNWu0YBXJPiyYUbNc0pMi9M8hYGPd0CQmmVN834C3XjePInO&_nc_ohc=1A3u-_7l038Q7kNvgGA8rF1&_nc_ht=scontent.fcrk1-4.fna&oh=00_AYDO7Oc4z0UJqbLKJI6ijE-yuWjC4PgH3BBaE1vvDyiDzQ&oe=669AE634" alt="Image 2" class="rounded-lg w-full">
-                            </div>
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/428606691_373911978723495_3392406520552306846_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHsMvW77i5wafReLYe7EsuAJfPzBrAeIuMl8_MGsB4i42tbMhAEkaSy8vdenIwO-0RFwNzjsIyqHEYCL1Gm7ooK&_nc_ohc=kzG27m_UOtYQ7kNvgEOUjFp&_nc_ht=scontent.fcrk1-1.fna&oh=00_AYBAEGidjX5SrKZ1zy8iWS85XAsLsED0WhcdCh5i2KuwqA&oe=669AF191" alt="Image 3" class="rounded-lg w-full">
-                            </div>
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/428613377_373913148723378_7690334558789896733_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGBNtTm2QRca7v_19_g2JShr8kT_SPywFavyRP9I_LAVh46KWLhFWbZI2fPdSv-zF2SknVFPioNdcnEsAbanItd&_nc_ohc=wQyokdeGJm8Q7kNvgEqpAld&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYBa8pKZMWPAKHcio3BUtlV5k06KFrAho0BLvU_rb8EMQw&oe=669AD3DB" alt="Image 4" class="rounded-lg w-full">
-                            </div>
-                         
-          
-            
-                          
-                          </div>
-                          <!-- Slide 2 -->
-                          <div class="carousel-item grid grid-cols-2 sm:grid-cols-4 gap-4">
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434703080_817088323785007_388690418068746462_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY5EVlG2m6VIWAmbNqpLzD8EkqFOCMvJHwSSoU4Iy8kQ58TJh7jlcPMyKCT2w4MQEFw8MSrWXPqRsurLzq6Eje&_nc_ohc=_IPS6H3wV5oQ7kNvgF2lMyi&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYD__fO8zsnc00Y9fI1v0FpD5tM6jjI2XKGn4nHYgPwpfQ&oe=669AF32A" alt="Image 5" class="rounded-lg w-full">
-                            </div>
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/434202111_817081477119025_8010824712087334958_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFOluHxqkaee7XRvvZcq7mqWecx9TnPk6JZ5zH1Oc-TosnRwZixwclsw-hL_I7VCnePQQfLy_gW38FpqgamZIci&_nc_ohc=B7x1Wm3iE7kQ7kNvgHOsbo4&_nc_ht=scontent.fcrk1-1.fna&oh=00_AYAxizGfGxJjSHqdLLPJl8HVMEjyl39pGjR4RDQ9SbcplQ&oe=669AE85A" alt="Image 6" class="rounded-lg w-full">
-                            </div>
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/435703175_817081497119023_1503442731914044424_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEst1HyY0DEsIjJPF1ySOMR8Po_vYkKD-rw-j-9iQoP6gnOgu5raSVnKJbXVrtj5YlN5BjwqBpvTu5FVEhIUd1i&_nc_ohc=_ma3GQbq3SQQ7kNvgG2bu5G&_nc_ht=scontent.fcrk1-3.fna&oh=00_AYCQm-UXvBLx8-QmbUVph83vK3t1dsEF6ZE2MJan_5fy-A&oe=669AED96" alt="Image 7" class="rounded-lg w-full">
-                            </div>
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434831202_817786707048502_6033755304355467245_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHSoRPno7c_oL2YZuZA9k74tTGPz9OwIl61MY_P07AiXiRDMkGUdr3z_KkEHpEHFUC8OHGgxnwECDMLIptmzerz&_nc_ohc=OECPezRwFSkQ7kNvgEBibY0&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYC60-9JOikvDmh8TZjq7HhMa-71F7qr7eBcWpohkQSmTQ&oe=669ABD59" alt="Image 8" class="rounded-lg w-full">
-                            </div>
-                          </div>
-
-
-
-
-
-                          <div class="carousel-item grid grid-cols-2 sm:grid-cols-4 gap-4">
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/428613377_373913148723378_7690334558789896733_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGBNtTm2QRca7v_19_g2JShr8kT_SPywFavyRP9I_LAVh46KWLhFWbZI2fPdSv-zF2SknVFPioNdcnEsAbanItd&_nc_ohc=wQyokdeGJm8Q7kNvgEqpAld&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYBa8pKZMWPAKHcio3BUtlV5k06KFrAho0BLvU_rb8EMQw&oe=669AD3DB" alt="Image 1" class="rounded-lg w-full">
-                            </div>
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/428606528_373914028723290_1342487845501663196_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFE04b0PnBJ-ZgIKoqBZc0u9wPBbCjVrtH3A8FsKNWu0YBXJPiyYUbNc0pMi9M8hYGPd0CQmmVN834C3XjePInO&_nc_ohc=1A3u-_7l038Q7kNvgGA8rF1&_nc_ht=scontent.fcrk1-4.fna&oh=00_AYDO7Oc4z0UJqbLKJI6ijE-yuWjC4PgH3BBaE1vvDyiDzQ&oe=669AE634" alt="Image 2" class="rounded-lg w-full">
-                            </div>
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/428606691_373911978723495_3392406520552306846_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHsMvW77i5wafReLYe7EsuAJfPzBrAeIuMl8_MGsB4i42tbMhAEkaSy8vdenIwO-0RFwNzjsIyqHEYCL1Gm7ooK&_nc_ohc=kzG27m_UOtYQ7kNvgEOUjFp&_nc_ht=scontent.fcrk1-1.fna&oh=00_AYBAEGidjX5SrKZ1zy8iWS85XAsLsED0WhcdCh5i2KuwqA&oe=669AF191" alt="Image 3" class="rounded-lg w-full">
-                            </div>
-                            <div class="w-full px-2 mb-4">
-                              <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/428613377_373913148723378_7690334558789896733_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGBNtTm2QRca7v_19_g2JShr8kT_SPywFavyRP9I_LAVh46KWLhFWbZI2fPdSv-zF2SknVFPioNdcnEsAbanItd&_nc_ohc=wQyokdeGJm8Q7kNvgEqpAld&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYBa8pKZMWPAKHcio3BUtlV5k06KFrAho0BLvU_rb8EMQw&oe=669AD3DB" alt="Image 4" class="rounded-lg w-full">
-                            </div>
-                         
-          
-            
-                          
-                          </div>
-
-
-                          
-                        <
-                    </section>
-                </div>
-            </div>
-          </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 <!--Footer-->
 <section id="footer">
     <footer class=" dark:bg-gray-900">
@@ -246,6 +321,26 @@
     </footer>
     </section>
         </div>
+
+
+
+
+        <script>
+          const carousel = document.querySelector('.carousel-inner');
+          const prevButton = document.getElementById('prev');
+          const nextButton = document.getElementById('next');
+          let currentIndex = 0;
+        
+          nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % 2;
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+          });
+        
+          prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + 2) % 2;
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+          });
+        </script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     
     
