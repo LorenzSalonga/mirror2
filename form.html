@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mirror Qualifiers Application Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #c7a2ff;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2, h6 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="text"],
+input[type="email"]{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #c39e46;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: #c7a2ff;
+}
+.m_logo{
+    width: 100px;
+}
+.title_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.title_container img{
+    margin: 0 25px;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+    <div class="title_container">
+        <img src="/img/gnc logo.png" alt="">
+    <div>
+        <h2>THE MIRROR QUALIFIERS</h2>
+        <h6>THE TRUTH IS MIGHTY AND WILL PREVAIL</h6>
+    </div>
+        <img src="/img/2.png" class="m_logo">
+    </div>
+        <form id="auditionForm">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="middleName">Middle Name</label>
+            <input type="text" name="middleName" id="middleName">
+
+            <label for="prefix">Prefix</label>
+            <input type="text" name="prefix" id="prefix">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="grade">Grade Level</label>
+            <select id="grade" name="grade" required onchange="updateSections()">
+                <option value="" disabled selected>Select your grade level</option>
+                <option value="7">7th Grade</option>
+                <option value="8">8th Grade</option>
+                <option value="9">9th Grade</option>
+                <option value="10">10th Grade</option>
+                <option value="11">11th Grade</option>
+                <option value="12">12th Grade</option>
+            </select>
+
+            <label for="section">Section</label>
+            <select name="section" id="section" required>
+                <option value="" disabled selected>Select your section</option>
+            </select>
+
+            <label for="category">Category</label>
+            <select name="category" id="category" required>
+                <option value="" disabled selected>Select your category</option>
+                <option value="News writing">News Writing</option>
+                <option value="Feature Writing">Feature Writing</option>
+                <option value="Science & Health Writing">Science and Health Writing</option>
+                <option value="Editorial Writing">Editorial Writing</option>
+                <option value="Editorial Cartooning">Editorial Cartooning</option>
+                <option value="Column Writing">Column Writing</option>
+                <option value="Sports Writing">Sports Writing</option>
+                <option value="Photojournalism">Photojournalism</option>
+                <option value="Copy Reading and Headline Writing">Copy Reading and Headline Writing</option>
+                <option value="TV Broadcasting">TV Broadcasting</option>
+                <option value="Radio Broadcasting">Radio Broadcasting</option>
+                <option value="Desktop Publishing">Desktop Publishing</option>
+            </select>
+
+            <label for="language">Language</label>
+            <select name="language" id="language">
+                <option value="" disabled selected>Select your preferred language</option>
+                <option value="english">English</option>
+                <option value="filipino">Filipino</option>
+                <option value="both">Both</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('auditionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(this);
+            const jsonData = {};
+            formData.forEach((value, key) => jsonData[key] = value);
+            
+            fetch('/submit_audition', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(jsonData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Your audition has been submitted successfully!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('There was an error submitting your audition.');
+            });
+        });
+    </script>
+
+    <script>
+              // sections script
+    function updateSections(){
+        const grade = document.getElementById('grade').value;
+        const section = document.getElementById('section');
+
+        const sections = {
+            '7': ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy'],
+            '8': ['St. Matthew', 'St. Luke', 'St. John', 'St. Peter'],
+            '9': ['OLIC', 'OLHR', 'OLPH', 'OLG'],
+            '10': ['Prophet Joel', 'Prophet Ezekiel', 'Prophet Hosea', 'Prophet Jonah'],
+            '11': ['G-11 STEM 1', 'G-11 STEM 2', 'G-11 ABM 1', 'G-11 ABM 2', 'G-11 HUMSS 1', 'G-11 HUMSS 2'],
+            '12': ['G-12 STEM 1', 'G-12 STEM 2', 'G-12 ABM 1', 'G-12 ABM 2', 'G-12 HUMSS 1', 'G-12 HUMSS 2']
+        };
+        section.innerHTML = '<option value="" disabled selected>Select your section</option>';
+
+        if (sections[grade]) {
+                sections[grade].forEach(sec => {
+                    const option = document.createElement('option');
+                    option.value = sec;
+                    option.textContent = sec;
+                    section.appendChild(option);
+                });
+            }
+
+    }
+    </script>
+</body>
+</html>
