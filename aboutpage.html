@@ -33,34 +33,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<style>
-  .flip-card {
-    perspective: 1000px;
-   
-  }
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-  .flip-card.flipped .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-  }
-  .flip-card-back {
-    transform: rotateY(180deg);
-  }
-</style>
-
 
 <body>
   <br>
@@ -104,7 +76,7 @@
 <section class="max-w-7xl w-full px-4 mx-auto">
   <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-6 lg:grid-cols-12">
     <div class="mr-auto place-self-center lg:col-span-7 text-center">
-      <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">THE MIRROR</h1>
+      <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-black">THE<span class="text-indigo-600"> MIRROR</h1>
       <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus sit animi inventore natus iste quia ullam provident debitis error nulla non, ipsam eaque, suscipit repellat ducimus reiciendis voluptatum magni minima. Nesciunt, impedit perferendis. Veniam quas praesentium, rem harum mollitia adipisci debitis commodi necessitatibus! Odio sint maxime voluptates, porro corporis, consequatur ex enim sequi exercitationem totam, nobis possimus quod explicabo velit.</p>
       <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
         Read More
