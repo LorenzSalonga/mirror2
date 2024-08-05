@@ -9,17 +9,15 @@
     <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@next/dist/css/splide.min.css">
     <script src="https://unpkg.com/@splidejs/splide@next"></script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E9634TBWJK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-E9634TBWJK');
-</script>
-
-<!-- Hotjar Tracking Code for The Mirror -->
-<script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E9634TBWJK"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E9634TBWJK');
+    </script>
+    <!-- Hotjar Tracking Code for The Mirror -->
+    <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:5072369,hjsv:6};
@@ -28,39 +26,9 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
-
-
-    <link rel="stylesheet" href="style.css">
+    </script>
 </head>
 <style>
-  .article {
-      
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  .article-title {
-      color: #4a5568;
-  }
-
-  .article-content {
-      color: #4a5568;
-  }
-  .read-more-btn {
-      background-color: #fbbf24;
-      color: #ffffff;
-      transition: background-color 0.3s ease;
-      display: inline-block;
-      padding: 8px 16px;
-      border-radius: 4px;
-      text-decoration: none;
-  }
-  .read-more-btn:hover {
-      background-color: #805ad5;
-  }
-
   .carousel {
       overflow: hidden;
       position: relative;
@@ -80,19 +48,23 @@
             justify-content: center;
             align-items: center;
         }
-        .carousel-text {
-            position: absolute;
-            text-align: center;
-            color: black;
-            z-index: 10;
-        }
 </style>
 <body>
- <!--Incase na gusto palagyan ng background
-<div class="bg-cover bg-center" style="background-image: url('https://e0.pxfuel.com/wallpapers/299/677/desktop-wallpaper-for-your-phone-data-src-aesthetic-light-purple-background-tip-violet.jpg');"-->
-<!--Hero Section-->
+<!--TIME,DARKMODE AND LIGHT MODE, REGISTRATION FORM-->
+<section class="dark:bg-gray-900 dark:text-white">
 <div class="flex items-center justify-between w-full">
-    <p id="currentDate" class="text-lg text-black font-semibold mt-2" style="padding-left: 4%;"></p>
+    <p id="currentDate" class="text-lg font-semibold mt-2" style="padding-left: 4%;"></p>
+        <button onclick="(() => document.body.classList.toggle('dark'))()"
+              class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+              <svg class="fill-violet-700 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+              </svg>
+              <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                      fill-rule="evenodd" clip-rule="evenodd"></path>
+              </svg>
+          </button>
     <div class="flex flex-wrap justify-center">
         <a href="form.html"
         class="flex  px-1 py-1 mt-2 text-sm font-bold leading-6 capitalize duration-100 transform border-2 rounded-sm cursor-pointer border-violet-500 focus:ring-4 focus:ring-violet-500 focus:ring-opacity-50 focus:outline-none sm:w-auto sm:px-6 border-text hover:shadow-lg hover:-translate-y-1" style="margin-right: 100%;">
@@ -101,10 +73,8 @@
   </div>
 </div>
 
-
-
-<!--Carousel na nag sslide-->
-<section id="carousel">
+<!--5Slide Carousel-->
+<section class="dark:bg-gray-900"> 
   <div id="default-carousel" class="w-full relative mt-3 px-16" data-carousel="slide">
       <!-- Carousel wrapper -->
       <div class="relative h-56 overflow-hidden  md:h-96 w-full px-5 py-2 flex justify-between items-center">
@@ -178,39 +148,44 @@
   </div>
 </section>
 <br>
-<!--navs pindutan-->
-<section >
-  <nav>
+<!--Navbar Section-->
+
+<nav class="dark:bg-gray-900 dark:text-white">
     <div class="max-w-screen-xl mx-auto p-1 flex flex-wrap items-center justify-between">
-      <a href="#" class="flex items-center space-x-3">
-        <img src="image/a.png" class="h-8" alt="Logo">
-        <span class="self-center text-2xl font-semibold text-black border-b-2 border-violet-500">THE MIRROR</span>
-      </a>
-      <div class="flex md:order-2 space-x-3">
-        <!-- Placeholder for future content or buttons -->
-      </div>
-      <div class="hidden md:flex items-center justify-between w-full md:w-auto md:order-1 ml-auto" id="navbar-sticky">
-        <ul class="flex flex-col md:flex-row md:space-x-8 mt-2 md:mt-0 p-4 md:p-0 font-medium">
-          <li>
-            <a href="index.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">HOME</a>
-          </li>
-          <li>
-            <a href="articles.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ARTICLES</a>
-          </li>
-          <li>
-            <a href="announcement.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ANNOUNCEMENT</a>
-          </li>
-          <li>
-            <a href="achivements.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ACHIEVEMENTS</a>
-          </li>
-          <li>
-            <a href="aboutpage.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ABOUT PAGE</a>
-          </li>
-        </ul> 
-      </div>
+        <a href="index.html" class="flex items-center space-x-3">
+            <img src="image/a.png" class="h-8" alt="Logo">
+            <span class="self-center text-2xl font-semibold text-black dark:text-white border-b-2 border-violet-500">THE MIRROR</span>
+        </a>
+        <div class="flex md:order-2 space-x-3">
+            <!-- Placeholder for future content or buttons -->
+        </div>
+        <button class="inline-flex items-center p-2 ml-3 text-sm text-black dark:text-white rounded-lg md:hidden hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-800" aria-controls="navbar-sticky" aria-expanded="false" id="navbar-toggle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col md:flex-row md:space-x-8 mt-2 md:mt-0 p-4 md:p-0 font-medium">
+                <li>
+                    <a href="index.html" class="block py-2 px-3 text-black dark:text-white border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">HOME</a>
+                </li>
+                <li>
+                    <a href="articles.html" class="block py-2 px-3 text-black dark:text-white border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ARTICLES</a>
+                </li>
+                <li>
+                    <a href="announcement.html" class="block py-2 px-3 text-black dark:text-white border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ANNOUNCEMENT</a>
+                </li>
+                <li>
+                    <a href="achivements.html" class="block py-2 px-3 text-black dark:text-white border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ACHIEVEMENTS</a>
+                </li>
+                <li>
+                    <a href="aboutpage.html" class="block py-2 px-3 text-black dark:text-white border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ABOUT PAGE</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
-</section>
+</nav>
+
   <!-- Articles Section -->
   <section class=" p-6">
       <div class="mt-2 text-center">
@@ -257,7 +232,7 @@
                     <p class="text-gray-500 text-sm">
                         The Philippines, just like many other countries grapple with the issues of tobacco smoking and the rise of electronic cigarettes (e-cigarettes) as alternative smoking systems particularly to the Filipino youth. This prompted nation leaders to actively initiate discussions, policies, and implementations in the 10th Session of the Conference of the Parties (COP10) to regulate the growing issue.
                     </p>
-                    <p class="text-gray-500 text-sm">
+                    <p class="text-white-500 text-sm">
                         .......
                     </p>
                 </div>
@@ -370,7 +345,7 @@
         </div>
     </div>
 
-    <!--Pangalawang article-->
+    <!--Second Article article-->
     <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-1">
 
         <div class="border-b mb-5 flex justify-between text-sm">
@@ -524,7 +499,7 @@
     <div class="max-w-7xl w-full px-4 mx-auto">
         <div class="grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
             <div class="flex flex-col items-center md:items-center text-center">
-                <h1 class="mb-4 text-4xl font-bold text-gray-900">
+                <h1 class="mb-4 text-4xl font-bold text-white-900">
                     <span class="text-black-500">Congratulations!</span>
                 </h1>
                 <p class="mb-8 text-gray-700">
@@ -548,9 +523,6 @@
     </div>
 </section>
 
-
-
-    
       <!-- Four Additional Achievements with Pictures -->
       <section class="w-full ">
         <div class="carousel w-full max-w-7xl mx-auto   overflow-hidden">
@@ -593,8 +565,9 @@
   </div>
 </section>
 
-<!--Pinatawag ko kayong lahat!-->
-<div class="container relative flex flex-col justify-between h-full max-w-7xl px-10 mx-auto xl:px-0 mt-5">
+<!--Announcement Section-->
+<section class="dark:bg-gray-900 dark:text-white">
+<div class="container relative flex flex-col justify-between h-full max-w-7xl px-10 mx-auto xl:px-0">
   <div class="w-full">
       <div class="flex flex-col w-full mb-10 sm:flex-row">
           <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
@@ -663,9 +636,9 @@
   </div>
 </div>
 <br>
-
+</section>
   
-<!---Paa ng website HAHAHA-->
+<!---Footer Section-->
 <section id="footer">
 <footer class=" dark:bg-gray-900">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -753,6 +726,14 @@
 </footer>
 </section>
 </div>
+</section>
+
+<script>
+    document.getElementById('navbar-toggle').addEventListener('click', function() {
+      var navbar = document.getElementById('navbar-sticky');
+      navbar.classList.toggle('hidden');
+    });
+  </script>
 
 <script>
   const carousel = document.querySelector('.carousel-inner');
