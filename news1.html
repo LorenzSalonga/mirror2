@@ -17,39 +17,59 @@
 <body>
     <br>
     <!--navs pindutan-->
-    <section >
-      <nav>
-        <div class="max-w-screen-xl mx-auto p-1 flex flex-wrap items-center justify-between">
-          <a href="#" class="flex items-center space-x-3">
-            <img src="image/a.png" class="h-8" alt="Logo">
-            <span class="self-center text-2xl font-semibold text-black border-b-2 border-violet-500">THE MIRROR</span>
-          </a>
-          <div class="flex md:order-2 space-x-3">
-            <!-- Placeholder for future content or buttons -->
+  
+    <section class="dark:bg-gray-900 dark:text-white">
+        <br>
+      <!--navs-->
+      <nav >
+          <div class="max-w-screen-xl mx-auto p-1 flex flex-wrap items-center justify-between ">
+            <a href="index.html" class="flex items-center space-x-3">
+              <img src="image/a.png" class="h-8" alt="Logo">
+              <span class="self-center text-2xl font-semibold dark:text-white text-black border-b-2 border-violet-500">THE MIRROR</span>
+            </a>
+            <div class="flex md:order-2 space-x-3">
+              <button onclick="(() => document.body.classList.toggle('dark'))()"
+                  class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+                  <svg class="fill-violet-700 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                  </svg>
+                  <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                          fill-rule="evenodd" clip-rule="evenodd"></path>
+                  </svg>
+              </button>
+            </div>
+            <button class="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false" id="navbar-toggle">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+            <div class="hidden w-full md:flex md:w-auto md:order-1"  id="navbar-sticky">
+              <ul class="flex flex-col md:flex-row md:space-x-8 mt-2 md:mt-0 p-4 md:p-0 font-medium ">
+                <li>
+                  <a href="index.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">HOME</a>
+                </li>
+                <li>
+                  <a href="articles.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ARTICLES</a>
+                </li>
+                <li>
+                  <a href="announcement.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ANNOUNCEMENT</a>
+                </li>
+                <li>
+                  <a href="achivements.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ACHIEVEMENTS</a>
+                </li>
+                <li>
+                  <a href="aboutpage.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ABOUT PAGE</a>
+                </li>
+                
+              </ul> 
+            </div>
           </div>
-          <div class="hidden md:flex items-center justify-between w-full md:w-auto md:order-1 ml-auto" id="navbar-sticky">
-            <ul class="flex flex-col md:flex-row md:space-x-8 mt-2 md:mt-0 p-4 md:p-0 font-medium">
-              <li>
-                <a href="index.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">HOME</a>
-              </li>
-              <li>
-                <a href="articles.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ARTICLES</a>
-              </li>
-              <li>
-                <a href="announcement.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ANNOUNCEMENT</a>
-              </li>
-              <li>
-                <a href="achivements.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ACHIEVEMENTS</a>
-              </li>
-              <li>
-                <a href="aboutpage.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ABOUT PAGE</a>
-              </li>
-            </ul> 
-          </div>
-        </div>
-      </nav>
-    </section>
+      
+        </nav>
 
+    
       <div class="max-w-8xl mx-auto mx-auto p-5 sm:p-10 md:p-16 relative">
         <div class="bg-cover bg-center text-center overflow-hidden"
             style="min-height: 500px; background-image: url('image/news1 1.png')"
@@ -76,7 +96,7 @@
     
                     </p>
     
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         MANILA, Philippines – A little over a year before the 2025 midterm polls, the
                         Commission on Elections (Comelec) faces preparation issues after disqualifying
                         automated counting machines (ACMs) provider Smartmatic Philippines Inc. last
@@ -86,7 +106,7 @@
     
                     
     
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         This decision came after a questionable experience with the technology provider
                         during the 2016 elections.
 
@@ -94,7 +114,7 @@
     
                     
     
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         Furthermore, the issued disqualification also noted that then Comelec Chairman
                         Juan Andres Bautista allegedly received bribes in exchange for granting a contract for
                         election machines to Smartmatic.
@@ -102,7 +122,7 @@
 
 
 
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         “Bautista and others are alleged to have laundered the bribe money through
                             multiple entities. It was revealed that Bautsita established a foreign shell company,
                             which was used to receive bribe payments from Smartmatic,” the 17-page resolution
@@ -111,7 +131,7 @@
 
 
 
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         “The commission recognizes the imminent threat to the strength and integrity of
                         our democratic processes. In the light of these findings, the commission acknowledges
                         the imminent peril to the integrity and robustness of our democratic institutions," it
@@ -120,7 +140,7 @@
 
 
 
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         In a statement released by Smartmatic, it denies any allegations against it,
                         saying they are based on unverified news reports and unofficial leaked documents from
                         abroad.
@@ -128,14 +148,14 @@
 
 
 
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         As a response to the Comelec’s decision, the company also filed a now pending
                         case at the Supreme Court questioning its disqualification. 
                     </p>
 
 
 
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         Meanwhile, the Comelec signed an P18 billion deal with South Korean firm Miru
                         Systems on Monday to rent 110,000 automated counting machines (ACMs) for the 2025
                         midterm elections as a replacement for Smartmatic Philippines. 
@@ -143,7 +163,7 @@
 
 
 
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         "We [have] received no temporary restraining order stopping the Comelec from
                         what it is doing [in relation to the issue of ACMs]. Maybe the honorable Supreme Court
                         has recognized that the Comelec has very little time left [in its ongoing preparations for
@@ -254,6 +274,16 @@
         </section>
 
 </div>
+    </section>
+<script>
+    document.getElementById('navbar-toggle').addEventListener('click', function() {
+      var navbar = document.getElementById('navbar-sticky');
+      navbar.classList.toggle('hidden');
+    });
+  </script>
+
+
+
 
 
 <script>

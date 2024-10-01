@@ -15,43 +15,58 @@
     
 </head>
 <body>
-    <!---
-    <div class="bg-cover bg-center" style="background-image: url('https://e0.pxfuel.com/wallpapers/299/677/desktop-wallpaper-for-your-phone-data-src-aesthetic-light-purple-background-tip-violet.jpg');">--->
 
+    <section class="dark:bg-gray-900 dark:text-white">
         <br>
-        <!--navs pindutan-->
-        <section >
-          <nav>
-            <div class="max-w-screen-xl mx-auto p-1 flex flex-wrap items-center justify-between">
-              <a href="#" class="flex items-center space-x-3">
-                <img src="image/a.png" class="h-8" alt="Logo">
-                <span class="self-center text-2xl font-semibold text-black border-b-2 border-violet-500">THE MIRROR</span>
-              </a>
-              <div class="flex md:order-2 space-x-3">
-                <!-- Placeholder for future content or buttons -->
-              </div>
-              <div class="hidden md:flex items-center justify-between w-full md:w-auto md:order-1 ml-auto" id="navbar-sticky">
-                <ul class="flex flex-col md:flex-row md:space-x-8 mt-2 md:mt-0 p-4 md:p-0 font-medium">
-                  <li>
-                    <a href="index.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">HOME</a>
-                  </li>
-                  <li>
-                    <a href="articles.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ARTICLES</a>
-                  </li>
-                  <li>
-                    <a href="announcement.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ANNOUNCEMENT</a>
-                  </li>
-                  <li>
-                    <a href="achivements.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ACHIEVEMENTS</a>
-                  </li>
-                  <li>
-                    <a href="aboutpage.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ABOUT PAGE</a>
-                  </li>
-                </ul> 
-              </div>
+      <!--navs-->
+      <nav >
+          <div class="max-w-screen-xl mx-auto p-1 flex flex-wrap items-center justify-between ">
+            <a href="index.html" class="flex items-center space-x-3">
+              <img src="image/a.png" class="h-8" alt="Logo">
+              <span class="self-center text-2xl font-semibold dark:text-white text-black border-b-2 border-violet-500">THE MIRROR</span>
+            </a>
+            <div class="flex md:order-2 space-x-3">
+              <button onclick="(() => document.body.classList.toggle('dark'))()"
+                  class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+                  <svg class="fill-violet-700 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                  </svg>
+                  <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                          fill-rule="evenodd" clip-rule="evenodd"></path>
+                  </svg>
+              </button>
             </div>
-          </nav>
-        </section>
+            <button class="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false" id="navbar-toggle">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+            <div class="hidden w-full md:flex md:w-auto md:order-1"  id="navbar-sticky">
+              <ul class="flex flex-col md:flex-row md:space-x-8 mt-2 md:mt-0 p-4 md:p-0 font-medium ">
+                <li>
+                  <a href="index.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">HOME</a>
+                </li>
+                <li>
+                  <a href="articles.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ARTICLES</a>
+                </li>
+                <li>
+                  <a href="announcement.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ANNOUNCEMENT</a>
+                </li>
+                <li>
+                  <a href="achivements.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ACHIEVEMENTS</a>
+                </li>
+                <li>
+                  <a href="aboutpage.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ABOUT PAGE</a>
+                </li>
+                
+              </ul> 
+            </div>
+          </div>
+      
+        </nav>
+
         <br><br>
 
       <div class="border border-violet-500 max-w-5xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
@@ -69,7 +84,7 @@
                                 <!-- Tooltip -->
                                 <div class="hs-tooltip [--trigger:hover] [--placement:bottom] inline-block">
                                     <div class="hs-tooltip-toggle sm:mb-1 block text-start cursor-pointer">
-                                        <span class="font-semibold text-gray-800 dark:text-neutral-200">
+                                        <span class="font-semibold text-gray-800 dark:text-white">
                                             Leyla Ludic
                                         </span>
     
@@ -143,14 +158,14 @@
                     <h2 class="text-2xl font-bold md:text-3xl dark:text-white">The Vaping Epidemic: A Closer Look at the Smoking Landscape of the
                         Philippines</h2>
     
-                    <p class="text-lg text-gray-800 dark:text-neutral-200">The Philippines, just like many other countries grapple with the issues of tobacco
+                    <p class="text-lg text-gray-800 dark:text-white"">The Philippines, just like many other countries grapple with the issues of tobacco
                         smoking and the rise of electronic cigarettes (e-cigarettes) as alternative smoking
                         systems particularly to the Filipino youth. This prompted nation leaders to actively initiate
                         discussions, policies, and implementations in the 10th Session of the Conference of the
                         Parties (COP10) to regulate the growing issue.</p>
                 </div>
     
-                <p class="text-lg text-gray-800 dark:text-neutral-200">Tobacco smoking has long since been a standing issue of the country with factors
+                <p class="text-lg text-gray-800 dark:text-white"">Tobacco smoking has long since been a standing issue of the country with factors
                     that include easy accessibility and targeted marketing by cigar companies. Despite the
                     existing control laws and regulations such as the nationwide imposition of higher tobacco
                     taxes that brought exemplary results, government officials still highlight the room for
@@ -163,7 +178,7 @@
                     </figcaption>
                 </figure>
     
-                <p class="text-lg text-gray-800 dark:text-neutral-200">In recent events, the growing presence of vapes and e-cigarettes provide a new
+                <p class="text-lg text-gray-800 dark:text-white"">In recent events, the growing presence of vapes and e-cigarettes provide a new
                     dimension to the smoking landscape of the Philippines, particularly to the youth as data
                     cited from the 2019 Global Youth Tobacco Survey show an alarming rise in vape usage
                     among teenagers aged 13-15, translating to millions of young Filipinos despite a related
@@ -171,7 +186,7 @@
                     access of vapes is limited at 18 years old.
                     </p>
     
-                <p class="text-lg text-gray-800 dark:text-neutral-200">The appeal of vape and e-cigarettes root from easy accessibility such as online
+                <p class="text-lg text-gray-800 dark:text-white"">The appeal of vape and e-cigarettes root from easy accessibility such as online
                     shops, varied flavors, and the perceived lighter health risks compared to tobacco
                     smoking, however, the World Health Organization (WHO) says otherwise as they stress
                     the health dangers of such smoking devices containing a highly addictive chemical,
@@ -179,7 +194,7 @@
                 </p>
 
 
-                <p class="text-lg text-gray-800 dark:text-neutral-200">“The delegation should speak rather than hide, whitewash, or disguise the truth of
+                <p class="text-lg text-gray-800 dark:text-white"">“The delegation should speak rather than hide, whitewash, or disguise the truth of
                     the serious threat to public health brought about by weak Philippine regulation on ecigarettes,” the joint statement of former health and education officials said.
                 </p>
     
@@ -189,7 +204,7 @@
                 </figure>
     
     
-                <p class="text-lg text-gray-800 dark:text-neutral-200">In response to the pressing issues, government agencies such as the Department
+                <p class="text-lg text-gray-800 dark:text-white"">In response to the pressing issues, government agencies such as the Department
                     of Trade and Industry (DTI) actively intensify monitoring and enforcement operations
                     against offenders of the Republic Act 11900. They have reported to have confiscated over
                     18,000 non-compliant vape products valued at approximately P5.5 million at both physical
@@ -197,7 +212,7 @@
                     to issuing strict certifications and registrations.
                     </p>
 
-                    <p class="text-lg text-gray-800 dark:text-neutral-200">The growing concern on the rise of vape and e-cigarette smoking to among the
+                    <p class="text-lg text-gray-800 dark:text-white"">The growing concern on the rise of vape and e-cigarette smoking to among the
                         Filipino youth continues to be a standing struggle in the country as monitoring and
                         regulations in the country exhibit room for improvement that can only be responded with
                         the constant collaboration of the government agencies through pro-active discussions,

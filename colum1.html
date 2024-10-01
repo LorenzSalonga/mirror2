@@ -18,40 +18,56 @@
     <!---
     <div class="bg-cover bg-center" style="background-image: url('https://e0.pxfuel.com/wallpapers/299/677/desktop-wallpaper-for-your-phone-data-src-aesthetic-light-purple-background-tip-violet.jpg');">-->
 
-        <br>
-        <!--navs pindutan-->
-        <section >
-          <nav>
-            <div class="max-w-screen-xl mx-auto p-1 flex flex-wrap items-center justify-between">
-              <a href="#" class="flex items-center space-x-3">
-                <img src="image/a.png" class="h-8" alt="Logo">
-                <span class="self-center text-2xl font-semibold text-black border-b-2 border-violet-500">THE MIRROR</span>
-              </a>
-              <div class="flex md:order-2 space-x-3">
-                <!-- Placeholder for future content or buttons -->
+        <section class="dark:bg-gray-900 dark:text-white">
+            <br>
+          <!--navs-->
+          <nav >
+              <div class="max-w-screen-xl mx-auto p-1 flex flex-wrap items-center justify-between ">
+                <a href="index.html" class="flex items-center space-x-3">
+                  <img src="image/a.png" class="h-8" alt="Logo">
+                  <span class="self-center text-2xl font-semibold dark:text-white text-black border-b-2 border-violet-500">THE MIRROR</span>
+                </a>
+                <div class="flex md:order-2 space-x-3">
+                  <button onclick="(() => document.body.classList.toggle('dark'))()"
+                      class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <svg class="fill-violet-700 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                      </svg>
+                      <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                          <path
+                              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                              fill-rule="evenodd" clip-rule="evenodd"></path>
+                      </svg>
+                  </button>
+                </div>
+                <button class="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false" id="navbar-toggle">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+                </button>
+                <div class="hidden w-full md:flex md:w-auto md:order-1"  id="navbar-sticky">
+                  <ul class="flex flex-col md:flex-row md:space-x-8 mt-2 md:mt-0 p-4 md:p-0 font-medium ">
+                    <li>
+                      <a href="index.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">HOME</a>
+                    </li>
+                    <li>
+                      <a href="articles.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ARTICLES</a>
+                    </li>
+                    <li>
+                      <a href="announcement.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ANNOUNCEMENT</a>
+                    </li>
+                    <li>
+                      <a href="achivements.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ACHIEVEMENTS</a>
+                    </li>
+                    <li>
+                      <a href="aboutpage.html" class="block py-2 px-3 dark:text-white text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ABOUT PAGE</a>
+                    </li>
+                    
+                  </ul> 
+                </div>
               </div>
-              <div class="hidden md:flex items-center justify-between w-full md:w-auto md:order-1 ml-auto" id="navbar-sticky">
-                <ul class="flex flex-col md:flex-row md:space-x-8 mt-2 md:mt-0 p-4 md:p-0 font-medium">
-                  <li>
-                    <a href="index.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">HOME</a>
-                  </li>
-                  <li>
-                    <a href="articles.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ARTICLES</a>
-                  </li>
-                  <li>
-                    <a href="announcement.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ANNOUNCEMENT</a>
-                  </li>
-                  <li>
-                    <a href="achivements.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ACHIEVEMENTS</a>
-                  </li>
-                  <li>
-                    <a href="aboutpage.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ABOUT PAGE</a>
-                  </li>
-                </ul> 
-              </div>
-            </div>
-          </nav>
-        </section>
+          
+            </nav>
 
       <div class="max-w-8xl mx-auto p-5 sm:p-10 md:p-16 relative">
         <div class="bg-cover bg-center text-center overflow-hidden"
@@ -79,7 +95,7 @@
     
                     </p>
     
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         I want modernization and not jeepney phaseout, and they are two different
                             things. What the Government pushing is, they want to phaseout what our traditionally
                             vehicles for an imported vehicles from other country, specifically from China. How our
@@ -90,7 +106,7 @@
     
                     
     
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         The Government is implementing a jeepney modernization aiming to reduce air
                         pollution and improve the quality of our environment. But the question is, are we really
                         ready for the changes and improvement for our environment? If we are aiming to
@@ -102,7 +118,7 @@
     
                     
     
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         On the other hand, Drivers cannot afford to buy new one vehicle, because the
                         amount of a one modernized vehicles has a double-price of a one traditional jeepney.
                         The amount of money they have is just enough to feed and support their family in an
@@ -113,7 +129,7 @@
 
 
 
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         Moreover, the modernized vehicles are imported and from China, which is a
                         questionable. We have here in the Philippines a local manufacturer that can create and
                         produce more sustainable, more than from an imported vehicles. Government should
@@ -122,7 +138,7 @@
 
 
 
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         We can also to consider the tradition and culture what we have as a Filipino,
                         because public transportation just like a traditional jeepney is part of what we are right
                         now. We can only see and experience the Filipino-tradition in jeep, wherein when you
@@ -133,7 +149,7 @@
 
 
 
-                    <p class="text-base leading-8 my-5">
+                    <p class="text-gray-900 leading-8 my-5">
                         JTo conclude what is my point here is, Jeepney Phaseout is just not the answer or
                         solution on what we want to improve, we can do modernization without phasing-out the
                         traditional one. And, don not waste the Filipinos money to get an imported vehicles from
@@ -262,6 +278,18 @@
 
 
 <script>
+    document.getElementById('navbar-toggle').addEventListener('click', function() {
+      var navbar = document.getElementById('navbar-sticky');
+      navbar.classList.toggle('hidden');
+    });
+  </script>
+
+
+
+
+
+
+<script>
     // Get the 'to top' button element by ID
     var toTopButton = document.getElementById("to-top-button");
 
@@ -286,6 +314,12 @@
         };
     }
 </script>
+
+
+
+
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
